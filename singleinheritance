@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace exp2staticclass
+{
+ internal class Program
+ {
+ class Shape
+ {
+ // Base class
+ }
+ class Circle : Shape
+ {
+ 
+ public double CalculateArea(int radius)
+ {
+ return Math.PI * radius * radius;
+ }
+ }
+ static void Main(string[] args)
+ {
+ Circle circle = new Circle();
+ double area = circle.CalculateArea(4);
+ Console.WriteLine("Area of the circle: " + area);
+ Console.ReadLine();
+ }
+ }
+}
